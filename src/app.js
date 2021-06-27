@@ -23,7 +23,6 @@ import { map, filter, switchMap } from 'https://dev.jspm.io/rxjs@6/_esm2015/oper
       pick: {
         galaxy(event) {
           immigration.data.galaxy = event.target.value
-          console.log(immigration.data)
         },
       },
       submit(event) {
