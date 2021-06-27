@@ -5,21 +5,21 @@
 	<title>Title</title>
 </head>
 <body>
-	<h1>지구별 입국심사</h1>
-	<form>
-		<dl>
-			<dt><label for="nation">나의 행성</label></dt>
-			<dd>
-				<select id="nation">
-					<option value="earth">지구별</option>
-					<option value="jupiter">목성</option>
-					<option value="mars">화성</option>
-					<option value="galactic">은하연합</option>
-				</select>
-			</dd>
-		</dl>
-		<button type="submit">제출하기</button>
-	</form>
-  <script src="app.js"></script>
+  <main id="app">
+		<h1>지구별 입국심사</h1>
+		<form>
+			<dl>
+				<dt><label for="galaxy">거주 은하</label></dt>
+				<dd>
+					<select id="galaxy">
+						<option value="our">우리 은하</option>
+						<option value="alpha">알파 센타우리</option>
+					</select>
+				</dd>
+			</dl>
+			<button type="submit">제출하기</button>
+		</form>
+  </main>
+  <script src="app.js" type="module"></script>
 </body>
 </html>
