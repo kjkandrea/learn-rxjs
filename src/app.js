@@ -1,4 +1,4 @@
-import { Observable, Subject, ReplaySubject, from, of, range } from 'https://dev.jspm.io/rxjs@6/_esm2015';
+import { fromEvent } from 'https://dev.jspm.io/rxjs@6/_esm2015';
 import { map, filter, switchMap } from 'https://dev.jspm.io/rxjs@6/_esm2015/operators';
 
 (() => {
@@ -6,17 +6,20 @@ import { map, filter, switchMap } from 'https://dev.jspm.io/rxjs@6/_esm2015/oper
     dom: {
       form: document.getElementById('form'),
     },
+    observer: {
+      form: fromEvent(document, 'click')
+    },
     initiate() {
-      console.log(Observable)
       this.bindEvents();
     },
     bindEvents() {
-      this.dom.form.addEventListener('submit', this.event.submit)
+      this.observer.form.subscribe(this.event.submit)
     },
     event: {
       submit(event) {
-        console.log(event)
         event.preventDefault()
+
+        alert('😝')
       }
     }
   }
