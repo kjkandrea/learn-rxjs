@@ -1,0 +1,25 @@
+{
+  "name": "learn-rxjs",
+  "version": "1.0.0",
+  "description": "옵저버패턴으로 동기적/비동기 처리를 단일화한다고? 그게 가능해?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjkandrea/learn-rxjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjkandrea/learn-rxjs/issues"
+  },
+  "homepage": "https://github.com/kjkandrea/learn-rxjs#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "rxjs": "^7.1.0"
+  }
+}
